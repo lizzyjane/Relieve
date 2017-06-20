@@ -1,0 +1,39 @@
+.registration {
+
+	&__title {
+
+		h1, h3 {
+			text-align: center;
+			padding: 0.5rem;
+		}
+	}
+
+	&__ask, &__ask--required {
+		text-align: center;
+		padding: 1rem 0rem 0rem 0rem;
+	}
+
+	&__ask--required {
+		&:after {
+			content: "*";
+			color: red;
+		}
+	}
+
+	&__input, &__submit {
+		text-align: center;
+	}
+
+	&__input--addiction {
+		margin: 2rem;
+	}
+
+	&__radio {
+		margin: 2rem;
+
+		&--type {
+			padding: 1rem;
+		}
+	}
+		
+}
