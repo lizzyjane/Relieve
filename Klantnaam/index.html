@@ -38,14 +38,40 @@
   </div>
 
   <h2 class="registration__ask--required">Waar ben je verslaafd aan?</h2>
-  <div class="registration__input--addiction">
-      <input type="checkbox" value="alcohol">Alcohol</option><br>
-      <input type="checkbox" value="softdrugs">(soft)Drugs</option><br>
-      <input type="checkbox" value="harddrugs">(hard)Drugs</option><br>
-      <input type="checkbox" value="game">Gamen</option><br>
-      <input type="checkbox" value="medicine">Medicijnen</option><br>
-      <input type="checkbox" value="smoke">Roken</option><br>
-      <input type="checkbox" value="other">Anders</option>
+
+  <div class="checkbox registration__input--addiction">
+    <div class="col-lg-3"> 
+      <label class="label">
+        <input type="checkbox" class="option-input checkbox" name="addiction[]" value="alcohol"/>Alcohol</option>
+      </label>
+      <label class="label">
+        <input type="checkbox" class="option-input checkbox" name="addiction[]" value="softdrugs">(soft)Drugs</option>
+      </label>
+    </div>
+
+    <div class="col-lg-3">   
+      <label class="label">
+        <input type="checkbox" class="option-input checkbox" name="addiction[]" value="harddrugs">(hard)Drugs</option>
+      </label>
+      <label class="label">
+        <input type="checkbox" class="option-input checkbox" name="addiction[]" value="game">Gamen</option>
+      </label>
+    </div>
+    
+    <div class="col-lg-3">
+      <label class="label">
+        <input type="checkbox" class="option-input checkbox" name="addiction[]" value="medicine">Medicijnen</option>
+      </label>
+      <label class="label">
+        <input type="checkbox" class="option-input checkbox" name="addiction[]" value="smoke">Roken</option>
+      </label>
+    </div>
+
+    <div class="col-lg-3">
+      <label class="label">
+        <input type="checkbox" class="option-input checkbox" name="addiction[]" value="other">Anders</option>
+      </label>
+    </div>
   </div>
 
   <h2 class="registration__ask">Hoelang ben je al verslaafd?</h2>
@@ -57,22 +83,24 @@
     <h3>Groepsindeling</h3>
   </div>
 
-  <!-- <div class="registration__radio">
-    <div class="registration__radio--type">
-      <input class="radio" type="radio" name="group" value="addiction"> Ik kan het beste praten met mensen met dezelfde verslaving ongeacht wat hun leeftijd is.<br>
-    </div>
-    <div class="registration__radio--type">
-      <input class="radio" type="radio" name="group" value="age"> Ik kan het beste praten met mensen met dezelfde leeftijd ongeacht wat hun verslaving is.<br>
-    </div>
-    <div class="registration__radio--type">
-      <input class="radio" type="radio" name="group" value="addictionage"> Ik kan het beste praten met mensen met dezelfde verslaving binnen mijn leeftijdscatagorie. <br><br>
-    </div>
-  </div> -->
-  
-  <div> 
-    <input type="radio" name="radio" id="radio4" class="radio"/>
-    <label for="radio4">Fourth Option</label>
+  <div class="checkbox registration__radio">
+    <label class="label">
+      <input type="radio" class="option-input radio" name="group" value="addiction"/>
+      Ik kan het beste praten met mensen met dezelfde verslaving ongeacht wat hun leeftijd is.
+    </label>
+
+    <label class="label">
+      <input type="radio" class="option-input radio" name="group" value="age"/>
+      Ik kan het beste praten met mensen met dezelfde leeftijd ongeacht wat hun verslaving is.
+    </label>
+
+    <label class="label">
+      <input type="radio" class="option-input radio" name="group" value="addictionage"/>
+      Ik kan het beste praten met mensen met dezelfde verslaving binnen mijn leeftijdscatagorie.
+    </label>
   </div>
+
+
 
 
   <div class="registration__submit">
