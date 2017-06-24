@@ -67,7 +67,7 @@ if (!empty($_POST["submit"])) {
       VALUES ('$username', '$password', '$age', '$addiction', '$addictiondate', '$group');";
 
       if ($conn->query($sql) === TRUE) {
-        echo "U bent geregistreerd!";
+        echo "U bent geregistreerd! U kunt" . <a href="login.php">hier</a> .  "inloggen";
       } else {
       echo "Error: " . $sql . "<br>" . $conn->error;
     }
