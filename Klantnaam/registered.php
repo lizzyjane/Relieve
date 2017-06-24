@@ -1,7 +1,6 @@
 <?php 
 require_once('db.php');
 
-
 //registration
 if (!empty($_POST["submit"])) {
 
@@ -67,7 +66,7 @@ if (!empty($_POST["submit"])) {
       VALUES ('$username', '$password', '$age', '$addiction', '$addictiondate', '$group');";
 
       if ($conn->query($sql) === TRUE) {
-        echo "U bent geregistreerd! U kunt" . <a href="login.php">hier</a> .  "inloggen";
+        echo "U bent geregistreerd! U kunt <a href='login.php'>hier</a> inloggen";
       } else {
       echo "Error: " . $sql . "<br>" . $conn->error;
     }
@@ -75,43 +74,43 @@ if (!empty($_POST["submit"])) {
 	$conn->close();
 	}
 
-	echo "Welkom bij Relieve, " . "" . $username . "" . "!" ;
-	 
-	 if ($group == 'a') {
-	 	echo "je zit in group A";
-	 } 
-	 elseif ($group == 'b') {
-	 	echo "Je zit in group B";
-	 }
-	 else {
-	 	echo "Je zit in group C";
-	 }
+		// echo "Welkom bij Relieve, " . "" . $username . "" . "!" ;
+		 
+		//  if ($group == 'a') {
+		//  	echo "je zit in group A";
+		//  } 
+		//  elseif ($group == 'b') {
+		//  	echo "Je zit in group B";
+		//  }
+		//  else {
+		//  	echo "Je zit in group C";
+		//  }
 
-	 
-	 // zelfde verslaving
-	 if ($group == 'a') {
-	 	echo "je zit in group A";
-	 } 
+		 
+		//  // zelfde verslaving
+		//  if ($group == 'a') {
+		//  	echo "je zit in group A";
+		//  } 
 
-	 // zelfde leeftijd
-	 elseif ($group == 'b') {
-	 	
-	 	if ($age <= 30) {
-	 		echo "leeftijd onder 25.";
-	 	}
+		//  // zelfde leeftijd
+		//  elseif ($group == 'b') {
+		 	
+		//  	if ($age <= 30) {
+		//  		echo "leeftijd onder 30.";
+		//  	}
 
-	 	elseif ($age >= 25 && $age <= 45) {
-	 		echo "leeftijd tussen 25 en 45";
-	 	}
+		//  	elseif ($age >= 25 && $age <= 45) {
+		//  		echo "leeftijd tussen 25 en 45";
+		//  	}
 
-	 	elseif ($age >= 40) {
-	 		echo "leeftijd boven 40";
-	 	}
-	 }
+		//  	elseif ($age >= 40) {
+		//  		echo "leeftijd boven 40";
+		//  	}
+		//  }
 
-	 // verslaving en leeftijd
-	 else {
-	 	echo "Je zit in group C";
-	 }
+		//  // verslaving en leeftijd
+		//  else {
+		//  	echo "Je zit in group C";
+		//  }
 
 ?>

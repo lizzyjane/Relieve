@@ -867,17 +867,20 @@ h3 {
   appearance: none;
 }
 
-input [type='submit'] {
-  width: 90%;
-  padding: 1.2rem;
-  margin: 1rem 0rem;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+input[type=submit] {
+  background: #40e0d0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  border: none;
+  color: #fff;
+  padding: 1.2rem;
+  cursor: pointer;
+  height: 2rem;
+  width: 20%;
+  margin-bottom: 4rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .header .relieve__logo {
@@ -908,12 +911,23 @@ input [type='submit'] {
   text-align: center;
 }
 
+.registration__submit {
+  margin-top: 2rem;
+}
+
+.registration__submit--login {
+  margin-top: 4rem;
+  text-align: center;
+}
+
 .registration__input--addiction {
-  margin: 2rem 6rem;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .registration__radio {
-  margin: 2rem 7rem;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .registration__radio--type {
@@ -984,4 +998,13 @@ input [type='submit'] {
 body .label {
   display: block;
   line-height: 40px;
+}
+
+.index__title h1, .index__title h2, .index__title h3 {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+a.index__button {
+  text-align: center;
 }

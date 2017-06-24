@@ -1,4 +1,6 @@
 <?php
+require('db.php');
+
 if (!isset($_POST['submit'])){
 ?>
 
@@ -10,12 +12,23 @@ if (!isset($_POST['submit'])){
   <title>Relieve</title>
   <link rel="icon" href="" type="image/x-icon"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700">
-  <link rel="stylesheet" href="hint.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
-<h1>Inloggen</h1>
+  <section class="header">
+    <div class="wrap">
+      <div class="col-lg-12">
+        <div class="relieve__logo">
+          <img class="relieve__imglogo" src="img/relieve_logo.png" alt="relieve_logo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <div class="registration__title">
+        <h1>Inloggen</h1>
+    </div>
 
     <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
         <h2 class="registration__ask--required">Vul hier jouw gebruikersnaam in</h2>
@@ -29,7 +42,7 @@ if (!isset($_POST['submit'])){
             <input class="input" type="password" name="password" required>
         </div>
 
-        <div class="registration__submit">
+        <div class="registration__submit--login">
             <input type="submit" name="submit" value="Login" />
         </div>
         
@@ -51,11 +64,13 @@ if (!isset($_POST['submit'])){
         $sql = "SELECT * from relieve WHERE username LIKE '{$username}' AND password LIKE '{$password}' LIMIT 1";
         $result = $mysqli->query($sql);
         if (!$result->num_rows == 1) {
+            // login unsuccessfull
             echo "<p>Invalid username/password combination</p>";
         } else {
-            echo "Hoppa, je bent ingelogd!";
-            // redirect to: header('location:index.php');
+            // logged in
+            header( 'Location: welcome.php' );
         }
+
     }
 ?>      
 

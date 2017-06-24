@@ -24,12 +24,23 @@
 		text-align: center;
 	}
 
+	&__submit {
+		margin-top: 2rem;
+	}
+
+	&__submit--login {
+		margin-top: 4rem;
+		text-align: center;
+	}
+
 	&__input--addiction {
-		margin: 2rem 6rem;
+		width: 90%;
+    	margin: 0 auto;
 	}
 
 	&__radio {
-		margin: 2rem 7rem;
+		width: 90%;
+    	margin: 0 auto;
 
 		&--type {
 			padding: 1rem;

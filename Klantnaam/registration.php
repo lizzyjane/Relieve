@@ -10,7 +10,6 @@ require_once('db.php');
   <title>Relieve</title>
   <link rel="icon" href="" type="image/x-icon"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700">
-  <link rel="stylesheet" href="hint.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -49,7 +48,7 @@ require_once('db.php');
   <h2 class="registration__ask--required">Waar ben je verslaafd aan?</h2>
 
   <div class="checkbox registration__input--addiction">
-    <div class="col-lg-3"> 
+    <div class="col-xs-6 col-sm-6 col-lg-3"> 
       <label class="label">
         <input type="checkbox" class="option-input checkbox" name="addictionAlcohol" value="alcohol"/>Alcohol</option>
       </label>
@@ -58,7 +57,7 @@ require_once('db.php');
       </label>
     </div>
 
-    <div class="col-lg-3">   
+    <div class="col-xs-6 col-sm-6 col-lg-3">  
       <label class="label">
         <input type="checkbox" class="option-input checkbox" name="addictionHD" value="harddrugs">(hard)Drugs</option>
       </label>
@@ -67,7 +66,7 @@ require_once('db.php');
       </label>
     </div>
     
-    <div class="col-lg-3">
+    <div class="col-xs-6 col-sm-6 col-lg-3">
       <label class="label">
         <input type="checkbox" class="option-input checkbox" name="addictionMedication" value="medicine">Medicijnen</option>
       </label>
@@ -76,7 +75,7 @@ require_once('db.php');
       </label>
     </div>
 
-    <div class="col-lg-3">
+    <div class="col-xs-6 col-sm-6 col-lg-3">
       <label class="label">
         <input type="checkbox" class="option-input checkbox" name="addictionOther" value="other">Anders</option>
       </label>
@@ -111,7 +110,7 @@ require_once('db.php');
 
 
   <div class="registration__submit">
-    <input type="submit" value="Ga verder" name="submit" id="submit">
+    <input class="submit" type="submit" value="Ga verder" name="submit" id="submit">
   </div>
   </form>
 

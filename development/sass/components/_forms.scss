@@ -19,16 +19,18 @@ fieldset {
 	appearance: none;
 }
 
-input [type='submit'] {
-	width: 90%;
-	padding: 1.2rem;
-	margin: 1rem 0rem;
-	display: inline-block;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
-	-webkit-appearance: none;
+input[type=submit] {
+	background: #40e0d0;
+    -webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
+    border: none;
+    color: #fff;
+    padding: 1.2rem;
+    cursor: pointer;
+    height: 2rem;
+    width: 20%;
+    margin-bottom: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
-
