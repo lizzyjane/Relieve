@@ -854,8 +854,13 @@ h3 {
   font-size: 1.3em;
 }
 
+.formcenter {
+  text-align: center;
+}
+
 .input {
   width: 90%;
+  min-width: 19rem;
   padding: 1.2rem;
   margin: 1rem 0rem;
   display: inline-block;
@@ -865,6 +870,8 @@ h3 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  border: 2px solid #40e0d0;
+  border-radius: 4px;
 }
 
 input[type=submit] {
@@ -934,6 +941,16 @@ input[type=submit] {
   padding: 1rem;
 }
 
+.registration__radio .group_a, .registration__radio .group_b, .registration__radio .group_c {
+  width: 100%;
+  max-width: 40rem;
+}
+
+.registration__radiogroup {
+  float: left;
+  padding: 2rem;
+}
+
 .option-input {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -998,6 +1015,12 @@ input[type=submit] {
 body .label {
   display: block;
   line-height: 40px;
+}
+
+body .label2 {
+  display: block;
+  line-height: 40px;
+  text-align: center;
 }
 
 .index__title h1, .index__title h2, .index__title h3 {

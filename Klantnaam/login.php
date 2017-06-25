@@ -63,11 +63,14 @@ if (!isset($_POST['submit'])){
      
         $sql = "SELECT * from relieve WHERE username LIKE '{$username}' AND password LIKE '{$password}' LIMIT 1";
         $result = $mysqli->query($sql);
+
         if (!$result->num_rows == 1) {
             // login unsuccessfull
             echo "<p>Invalid username/password combination</p>";
         } else {
+            session_start(); 
             // logged in
+            $_SESSION['user'] = $result->fetch_assoc();
             header( 'Location: welcome.php' );
         }
 

@@ -45,6 +45,16 @@
 		&--type {
 			padding: 1rem;
 		}
+
+		.group_a, .group_b, .group_c {
+			width: 100%;
+			max-width: 40rem;
+		}
+	}
+
+	&__radiogroup {
+		float: left;
+		padding: 2rem;
 	}
 		
 }

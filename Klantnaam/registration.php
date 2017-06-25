@@ -47,7 +47,7 @@ require_once('db.php');
 
   <h2 class="registration__ask--required">Waar ben je verslaafd aan?</h2>
 
-  <div class="checkbox registration__input--addiction">
+  <div class="checkbox registration__input--addiction row">
     <div class="col-xs-6 col-sm-6 col-lg-3"> 
       <label class="label">
         <input type="checkbox" class="option-input checkbox" name="addictionAlcohol" value="alcohol"/>Alcohol</option>
@@ -82,30 +82,35 @@ require_once('db.php');
     </div>
   </div>
 
-  <h2 class="registration__ask">Hoelang ben je al verslaafd?</h2>
-  <div class="registration__input">
-    <input class="input" type="date" name="addictiondate">
-  </div>
-
   <div class="registration__title">
     <h3>Groepsindeling</h3>
   </div>
 
-  <div class="checkbox registration__radio">
-    <label class="label">
-      <input type="radio" class="option-input radio" name="group" value="a" required/>
-      Ik kan het beste praten met mensen met dezelfde verslaving ongeacht wat hun leeftijd is.
-    </label>
+  <div class="checkbox registration__radio row">
 
-    <label class="label">
-      <input type="radio" class="option-input radio" name="group" value="b"/>
-      Ik kan het beste praten met mensen met dezelfde leeftijd ongeacht wat hun verslaving is.
-    </label>
+    <div class="registration__radiogroup col-xs-12 col-sm-12 col-lg-4">
+      <img class="group_a" src="img/relieve1.png">
+      <label class="label2">
+        Ik kan het beste praten met mensen met dezelfde verslaving ongeacht wat hun leeftijd is.
+        <br> <input type="radio" class="option-input radio" name="group" value="a" required/>
+      </label>
+    </div>
 
-    <label class="label">
-      <input type="radio" class="option-input radio" name="group" value="c"/>
-      Ik kan het beste praten met mensen met dezelfde verslaving binnen mijn leeftijdscatagorie.
-    </label>
+    <div class="registration__radiogroup col-xs-12 col-sm-12 col-lg-4">
+      <img class="group_b" src="img/relieve2.png">
+      <label class="label2">
+        Ik kan het beste praten met mensen met dezelfde leeftijd ongeacht wat hun verslaving is.
+        <br> <input type="radio" class="option-input radio" name="group" value="b"/>
+      </label>
+    </div>
+
+    <div class="registration__radiogroup col-xs-12 col-sm-12 col-lg-4">
+      <img class="group_c" src="img/relieve3.png">
+      <label class="label2">
+        Ik kan het beste praten met mensen met dezelfde verslaving binnen mijn leeftijdscatagorie.
+        <br> <input type="radio" class="option-input radio" name="group" value="c"/>
+      </label>
+    </div>
   </div>
 
 

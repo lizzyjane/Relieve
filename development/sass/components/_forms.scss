@@ -6,8 +6,13 @@ fieldset {
 
 }
 
+.formcenter {
+ 	text-align: center;
+ }
+
 .input {
 	width: 90%;
+	min-width: 19rem;
 	padding: 1.2rem;
 	margin: 1rem 0rem;
 	display: inline-block;
@@ -17,6 +22,8 @@ fieldset {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
+	border: 2px solid #40e0d0;
+    border-radius: 4px;
 }
 
 input[type=submit] {
